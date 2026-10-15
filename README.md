@@ -1,4 +1,4 @@
-# Lab 5: UML Class Diagrams
+# Lab 4: UML Class Diagrams
 
 UML (Unified Modeling Language) class diagrams are a type of diagram used in software engineering to describe the structure and organization of classes, objects, and their relationships in a software system. The purpose of a UML class diagram is to visually represent the classes, attributes, and methods of a software system, and to show how these classes interact with each other.  In COSC 111/121, you would have seen the basic structure of a class diagram to understand inheritance, interfaces, and the relationship of classes (is-a and has-a type relationships).  This lab will expand on this, looking at how we can describe the relationship (associations) between different classes in a system design (aggregation, participation and composition).
 
@@ -22,11 +22,11 @@ Consider the following example that models employees working on different projec
 
 ![This is an image](/img/worksonclass.png)
 
-In this model there is a **Department** that has multiple **employees** but there could also be empty departments.   Each employee can work for at most one department.  The department is also managed by at most one employee (but may not have a manager) and an employee can manage multiple departments (but can also not be a manager at all).   Each department has at least one **Project** but can be working on multiple projects whereas each project can be associated with at most 1 department but could also not be associated with any department (i.e. project hasn't been assigned yet).  An employee can be associated (working on) with a project (and can be working on multiple projects but may not be working on any project at all).  A project can have multiple employees but may not have any.   
+In this model there is a **Department** that has multiple **employees** but there could also be empty departments.   Each employee can work for at most one department.  The department is also managed by at most one employee (but may not have a manager) and an employee can manage multiple departments (but can also not be a manager at all).   Each department has at least one **Project** but can be working on multiple projects whereas each project can be associated with at most 1 department but could also not be associated with any department (i.e., the project hasn't been assigned yet).  An employee can be associated (working on) with a project (and can be working on multiple projects but may not be working on any project at all).  A project can have multiple employees but may not have any.   
 
 ## Building a UML Class Diagram (40 marks)
 
-This assignment is meant to give you practice with design, especially developing UML class diagrams. The assignment may be done in groups of 2.
+This assignment is meant to give you practice with design, especially developing UML class diagrams. The assignment may be done in groups.
 
 ### Develop a UML class diagram for the EBook book store. Below is a description of EBook:
 
